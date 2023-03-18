@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="209a1650-c7d7-4ebd-b051-879ccfc28396" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/01-constructor-injection/src/main/java/spring_core/Coach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-constructor-injection/src/main/java/spring_core/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02-component-scanning/src/main/java/spring_core_demo/common/Coach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02-component-scanning/src/main/java/spring_core_demo/common/CricketCoach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04-qualifiers/src/main/java/spring_core_demo/common/BaseballCoach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04-qualifiers/src/main/java/spring_core_demo/common/TennisCoach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04-qualifiers/src/main/java/spring_core_demo/common/TrackCoach.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2NBg0f7oguyGsEBBFEvw4X7Ax5o" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="209a1650-c7d7-4ebd-b051-879ccfc28396" name="Changes" comment="" />
+      <created>1679142669679</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679142669679</updated>
+    </task>
+    <servers />
+  </component>
+</project>
