@@ -9,7 +9,7 @@ import spring_core_demo.common.SwimCoach;
 public class SportConfig {
 
     @Bean("foo")
-    public Coach swimCoach(){  // The Bean id defaults  to the  method name
+    public Coach swimCoach() {  // The Bean id defaults  to the  method name
         return new SwimCoach();
     }
 }

@@ -1,4 +1,4 @@
-package spring_core_demo.spring_core;
+package spring_core_demo;
 
 import org.springframework.boot.SpringApplication; // Creates application context, and registers all beans, Starts the embedded server Tomcat etc...
 import org.springframework.boot.autoconfigure.SpringBootApplication; /*	Enables Auto configuration, Component scanning, Additional configuration		*/
