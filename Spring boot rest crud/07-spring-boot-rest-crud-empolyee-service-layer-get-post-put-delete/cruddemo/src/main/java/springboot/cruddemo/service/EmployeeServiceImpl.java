@@ -9,7 +9,8 @@ import springboot.cruddemo.entity.Employee;
 import java.util.List;
 
 @Service
-public class EmployeeServiceImpl implements EmployeeService {
+public class
+EmployeeServiceImpl implements EmployeeService {
 
     private EmployeeDAO theEmployeeDAO;
 

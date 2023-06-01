@@ -5,7 +5,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import springboot.cruddemo.entity.Employee;
 
 //@RepositoryRestResource(path="members")
-public interface EmployeeRepository extends JpaRepository<Employee, Integer>  // firs parameter for our entity type the other one is for the primary key
+public interface EmployeeRepository extends JpaRepository<Employee, Integer>  // first parameter for our entity type the other one is for the primary key
 {
 // will act as a DAO for us
 // no need to write code, spring jpa will provide crud methods for free
