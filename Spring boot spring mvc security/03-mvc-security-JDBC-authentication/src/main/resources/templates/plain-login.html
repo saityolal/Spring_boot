@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Login Page</title>
+
+    <style>
+        .failed {
+        color: red;
+        background-color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+<h3>My Custom Login Page</h3>
+
+<form action="#" th:action="@{/authenticateTheUser}" method="POST">
+
+    <!-- Check for login error-->
+    <div th:if="${param.error}"> <!-- Spring will detect automatically with appending ?error parameter -->
+        <i class="failed">Invalid Userid or password </i>
+    </div>
+
+    <div th:if="${param.logout}"> <!-- Spring will detect automatically with appending ?logout parameter -->
+        <i class="failed">You have been logged out </i>
+    </div>
+    <p>
+        Username: <input type="text" name="username" placeholder="your user name"/>
+    </p>
+
+    <p>
+        Password: <input type="text" name="password" placeholder="your password"/>
+    </p>
+
+    <input type="submit" value="Login"/>
+
+</form>
+
+</body>
+
+</html>
