@@ -38,7 +38,7 @@ public class InstructorDetail {
     @Column(name = "hobby")
     private String hobby;
 
-    @OneToOne(mappedBy = "instructorDetail",
+    @OneToOne(mappedBy = "instructorDetail", // The mappedBy element defines a bidirectional relationship. This attribute allows you to refer the associated entities from both sides.
             cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH}) // except cascade type remove
     private Instructor instructor;
 

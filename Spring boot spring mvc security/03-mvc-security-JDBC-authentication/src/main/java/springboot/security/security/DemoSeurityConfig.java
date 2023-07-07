@@ -11,6 +11,31 @@ import javax.sql.DataSource;
 @Configuration
 public class DemoSeurityConfig {
 
+    /*  @Bean
+    public InMemoryUserDetailsManager userDetailsManager() {
+
+        UserDetails john = User.builder()
+                .username("john")
+                .password("{noop}test123")
+                .roles("EMPLOYEE")
+                .build();
+
+        UserDetails marry = User.builder()
+                .username("marry")
+                .password("{noop}test123")
+                .roles("EMPLOYEE", "MANAGER")
+                .build();
+
+        UserDetails susan = User.builder()
+                .username("susan")
+                .password("{noop}test123")
+                .roles("EMPLOYEE", "MANAGER", "ADMIN")
+                .build();
+
+        return new InMemoryUserDetailsManager(john, marry, susan);
+    }
+    */
+
 
     // add support for jdbc
     @Bean
@@ -51,28 +76,5 @@ public class DemoSeurityConfig {
     }
 
 
-  /*  @Bean
-    public InMemoryUserDetailsManager userDetailsManager() {
 
-        UserDetails john = User.builder()
-                .username("john")
-                .password("{noop}test123")
-                .roles("EMPLOYEE")
-                .build();
-
-        UserDetails marry = User.builder()
-                .username("marry")
-                .password("{noop}test123")
-                .roles("EMPLOYEE", "MANAGER")
-                .build();
-
-        UserDetails susan = User.builder()
-                .username("susan")
-                .password("{noop}test123")
-                .roles("EMPLOYEE", "MANAGER", "ADMIN")
-                .build();
-
-        return new InMemoryUserDetailsManager(john, marry, susan);
-    }
-    */
 }
