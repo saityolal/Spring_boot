@@ -16,7 +16,7 @@ public class DemoController {
     private Coach myCoach;
 
     @Autowired
-    public DemoController(@Qualifier("trackCoach")Coach theCoach) {   // @Qualifier annotation has more priority than @Primary annotation
+    public DemoController(Coach theCoach) {   // @Qualifier annotation has more priority than @Primary annotation
 
         myCoach = theCoach;
     }
