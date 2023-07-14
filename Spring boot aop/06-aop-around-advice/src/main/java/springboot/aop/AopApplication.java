@@ -32,22 +32,25 @@ public class AopApplication {
             //theAfterAdvice(theAccountDAO, theMembershipDAO);
             //demoTheAroundAdvice(theTrafficFortuneService);
             //demoTheAroundAdviceHandleExecption(theTrafficFortuneService);
-            demoTheAroundAdviceReThrowExecption(theTrafficFortuneService);
+            demoTheAroundAdviceReThrowException(theTrafficFortuneService);
 
         };
 
     }
 
-    private void demoTheAroundAdviceReThrowExecption(TrafficFortuneService theTrafficFortuneService) {
+    private void demoTheAroundAdviceReThrowException(TrafficFortuneService theTrafficFortuneService) {
 
         System.out.println("\n Main demo app: demoTheAroundAdviceReThrowExecption");
 
         System.out.println("\n Calling getFortune()");
 
-        boolean tripWire = true;
-        String data = theTrafficFortuneService.getFortune(tripWire);
-
-        System.out.println("\n My Fortune is: " + data);
+        try {
+            boolean tripWire = true;
+            String data = theTrafficFortuneService.getFortune(tripWire);
+            System.out.println("\n My Fortune is: " + data);
+        }catch (Exception e){
+            System.out.println("ReThrow Exception has been caught again:  " + e.getMessage());
+        }
 
         System.out.println("\n Finished!");
     }
